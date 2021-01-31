@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Jan 30 21:14:29 2021
+# Process ID: 2044
+# Current directory: E:/Documents/GitHub/ENEL-489/Labs/Lab-1/Task-3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14864 E:\Documents\GitHub\ENEL-489\Labs\Lab-1\Task-3\pulsecounter10.xpr
+# Log file: E:/Documents/GitHub/ENEL-489/Labs/Lab-1/Task-3/vivado.log
+# Journal file: E:/Documents/GitHub/ENEL-489/Labs/Lab-1/Task-3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Documents/GitHub/ENEL-489/Labs/Lab-1/Task-3/pulsecounter10.xpr
+update_compile_order -fileset sources_1

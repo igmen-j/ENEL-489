@@ -1,0 +1,15 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx_/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 8abb655f64674bdcabefab502776be25 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_func_impl xil_defaultlib.testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-4940] 'mod16counter' remains a black box since it has no binding entity [E:/Documents/GitHub/ENEL-489/Labs/Lab-1/Task-2/counter10.srcs/sim_1/new/testbench.vhd:57]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.testbench
+Built simulation snapshot testbench_func_impl

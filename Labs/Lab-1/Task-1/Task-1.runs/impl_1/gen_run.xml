@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1612059529">
+  <File Type="ROUTE-PWR" Name="Mod16Counter_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Mod16Counter.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="Mod16Counter_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Mod16Counter_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="Mod16Counter.msk"/>
+  <File Type="ROUTE-CLK" Name="Mod16Counter_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="Mod16Counter.vdi"/>
+  <File Type="BG-BIT" Name="Mod16Counter.bit"/>
+  <File Type="BG-DRC" Name="Mod16Counter.drc"/>
+  <File Type="BG-BGN" Name="Mod16Counter.bgn"/>
+  <File Type="BG-BIN" Name="Mod16Counter.bin"/>
+  <File Type="BITSTR-RBT" Name="Mod16Counter.rbt"/>
+  <File Type="BITSTR-NKY" Name="Mod16Counter.nky"/>
+  <File Type="BITSTR-BMM" Name="Mod16Counter_bd.bmm"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Mod16Counter_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="Mod16Counter.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="Mod16Counter.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Mod16Counter.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="Mod16Counter_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Mod16Counter.hwdef"/>
+  <File Type="PLACE-IO" Name="Mod16Counter_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Mod16Counter_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Mod16Counter_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Mod16Counter_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Mod16Counter_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="Mod16Counter_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Mod16Counter_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Mod16Counter_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Mod16Counter_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Mod16Counter_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="Mod16Counter_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Mod16Counter_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Mod16Counter_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Mod16Counter_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Mod16Counter_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Mod16Counter_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Mod16Counter_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Mod16Counter_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Mod16Counter_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="Mod16Counter_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="Mod16Counter_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="Mod16Counter_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Mod16Counter_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="Mod16Counter_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Mod16Counter_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Mod16Counter_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Mod16Counter_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="Mod16Counter_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Mod16Counter_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="Mod16Counter.pdi"/>
+  <File Type="RCFI_FILE" Name="Mod16Counter.rcfi"/>
+  <File Type="CFI_FILE" Name="Mod16Counter.cfi"/>
+  <File Type="RNPI_FILE" Name="Mod16Counter.rnpi"/>
+  <File Type="NPI_FILE" Name="Mod16Counter.npi"/>
+  <File Type="RBD_FILE" Name="Mod16Counter.rbd"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Mod16Counter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Mod16Counter"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

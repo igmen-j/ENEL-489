@@ -1,0 +1,1 @@
+-wto "262a7910808247cea7c59847b77f0b27" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "PulseMod10Counter_behav" "xil_defaultlib.PulseMod10Counter" -log "elaborate.log" 

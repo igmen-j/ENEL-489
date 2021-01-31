@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jan 18 09:38:57 2021
+# Process ID: 5640
+# Current directory: E:/Documents/GitHub/ENEL-489/Labs/Lab-1/Task-1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10744 E:\Documents\GitHub\ENEL-489\Labs\Lab-1\Task-1\Task-1.xpr
+# Log file: E:/Documents/GitHub/ENEL-489/Labs/Lab-1/Task-1/vivado.log
+# Journal file: E:/Documents/GitHub/ENEL-489/Labs/Lab-1/Task-1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Documents/GitHub/ENEL-489/Labs/Lab-1/Task-1/Task-1.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'E:/Documents/GitHub/ENEL-489/Labs/Lab-1/Task-1/Task-1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx_/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 1015.188 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "E:/Documents/GitHub/ENEL-489/Labs/Lab-1/Task-1/Task-1.sim/sim_1/behav/xsim/elaborate.log"
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "E:/Documents/GitHub/ENEL-489/Labs/Lab-1/Task-1/Task-1.sim/sim_1/behav/xsim/elaborate.log"
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "E:/Documents/GitHub/ENEL-489/Labs/Lab-1/Task-1/Task-1.sim/sim_1/behav/xsim/elaborate.log"
+launch_simulation -mode post-implementation -type functional
+Command: launch_simulation -mode post-implementation -type functional
+INFO: [Vivado 12-5682] Launching post-implementation functional simulation in 'E:/Documents/GitHub/ENEL-489/Labs/Lab-1/Task-1/Task-1.sim/sim_1/impl/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1102.133 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+open_run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1102.133 ; gain = 86.945
+INFO: [Common 17-344] 'open_run' was cancelled
