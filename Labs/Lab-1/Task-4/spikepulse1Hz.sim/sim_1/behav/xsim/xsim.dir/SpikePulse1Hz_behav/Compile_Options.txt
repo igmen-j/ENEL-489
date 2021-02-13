@@ -1,1 +1,0 @@
--wto "e3d85b04bb814fefb41abc7b509ab00c" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "SpikePulse1Hz_behav" "xil_defaultlib.SpikePulse1Hz" -log "elaborate.log" 

@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 01/30/2021 08:38:22 PM
+-- Create Date: 02/13/2021 09:53:28 AM
 -- Design Name: 
 -- Module Name: testbench - Behavioral
 -- Project Name: 
@@ -36,14 +36,15 @@ entity testbench is
 end testbench;
 
 architecture Behavioral of testbench is
-    component Mod10Counter
+    component Q88IP
         Port ( CLK : in STD_LOGIC;
-           CLR : in STD_LOGIC;
-           Q : out unsigned (3 downto 0));
-    end component;    
-    signal CLK_tb, CLR_tb :  STD_LOGIC;
-    signal Q_tb : unsigned (3 downto 0);  
-        
+           A : in STD_LOGIC_VECTOR (15 downto 0);
+           B : in STD_LOGIC_VECTOR (15 downto 0);
+           P : out STD_LOGIC_VECTOR (15 downto 0));
+    end component; 
+    signal CLK_tb : STD_LOGIC;
+    signal A_tb, B_tb, P_tb : STD_LOGIC_VECTOR (15 downto 0);
+    
 begin
     process begin
         CLK_tb <= '0';
@@ -52,8 +53,16 @@ begin
         wait for 5ns;
     end process;
     
-    CLR_tb <= '0';
-    
-    counter: Mod10Counter port map (CLK=>CLK_tb, CLR=>CLR_tb, Q=>Q_tb);
+   process begin 
+        A_tb <= X"0800";
+        B_tb <= X"0400";
+        wait for 10ns;
+        A_tb <= X"0808";
+        B_tb <= X"0404";
+        wait for 10ns;
+    end process;
+        
+    test: Q88IP port map (CLK=>CLK_tb, A=>A_tb, B=>B_tb, P=>P_tb);
+
 
 end Behavioral;

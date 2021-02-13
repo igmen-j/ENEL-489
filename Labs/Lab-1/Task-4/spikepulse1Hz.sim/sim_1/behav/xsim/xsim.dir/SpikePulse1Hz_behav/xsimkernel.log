@@ -1,7 +1,0 @@
-Running: xsim.dir/SpikePulse1Hz_behav/xsimk.exe -simmode gui -wdb SpikePulse1Hz_behav.wdb -simrunnum 0 -socket 55796
-Design successfully loaded
-Design Loading Memory Usage: 5832 KB (Peak: 5832 KB)
-Design Loading CPU Usage: 77 ms
-Simulation completed
-Simulation Memory Usage: 14408 KB (Peak: 14408 KB)
-Simulation CPU Usage: 3202 ms

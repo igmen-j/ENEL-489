@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 01/30/2021 09:14:22 PM
+-- Create Date: 02/01/2021 09:15:09 AM
 -- Design Name: 
--- Module Name: SpikePulse1Hz - Behavioral
+-- Module Name: 4BitAdder - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,26 +31,22 @@ use IEEE.NUMERIC_STD.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity SpikePulse1Hz is
+entity FourBitAdder is
     Port ( CLK : in STD_LOGIC;
-           CLR : in STD_LOGIC;
-           Q : out STD_LOGIC);
-end SpikePulse1Hz;
+           A : in signed (3 downto 0);
+           B : in signed (3 downto 0);
+           SUM : out signed (3 downto 0));
+end FourBitAdder;
 
-architecture Behavioral of SpikePulse1Hz is
-    signal tmp: unsigned(26 downto 0) := "000000000000000000000000000";
-begin                                     
-    process (CLK)
-    begin
-        if (CLK'event and CLK='1') then
-          if (CLR='1' or tmp="010111110101111000010000000") then --50,000,000
-            tmp <= "000000000000000000000000000";
-            Q <= '1';
-          else
-            tmp <= tmp + 1;
-            Q <= '0';
-          end if;
-       end if;
+architecture Behavioral of FourBitAdder is
+    signal temp_sum : signed(3 downto 0);
+begin
+    process(CLK) begin
+        if (rising_edge(CLK)) then
+            SUM <= temp_sum;
+        end if;
     end process;
 
+    temp_sum <= A + B;
+    
 end Behavioral;

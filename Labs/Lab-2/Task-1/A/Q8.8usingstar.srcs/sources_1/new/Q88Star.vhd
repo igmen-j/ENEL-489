@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 01/30/2021 09:14:22 PM
+-- Create Date: 02/01/2021 09:42:07 AM
 -- Design Name: 
--- Module Name: SpikePulse1Hz - Behavioral
+-- Module Name: Q88Star - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,26 +31,25 @@ use IEEE.NUMERIC_STD.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity SpikePulse1Hz is
+entity Q88Star is
     Port ( CLK : in STD_LOGIC;
-           CLR : in STD_LOGIC;
-           Q : out STD_LOGIC);
-end SpikePulse1Hz;
+           A : in signed (15 downto 0);
+           B : in signed (15 downto 0);
+           P : out signed (15 downto 0));
+end Q88Star;
 
-architecture Behavioral of SpikePulse1Hz is
-    signal tmp: unsigned(26 downto 0) := "000000000000000000000000000";
-begin                                     
-    process (CLK)
-    begin
-        if (CLK'event and CLK='1') then
-          if (CLR='1' or tmp="010111110101111000010000000") then --50,000,000
-            tmp <= "000000000000000000000000000";
-            Q <= '1';
-          else
-            tmp <= tmp + 1;
-            Q <= '0';
-          end if;
-       end if;
+architecture Behavioral of Q88Star is
+    signal P_s : signed(15 downto 0);
+    signal P_s_32 : signed(31 downto 0);
+   
+begin
+    process(CLK) begin
+        if (rising_edge(CLK)) then
+            P <= P_s;
+        end if;
     end process;
 
+    P_S_32 <= A * B;
+    P_S <= P_S_32(23 downto 8);
+    
 end Behavioral;
