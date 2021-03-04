@@ -48,7 +48,7 @@ architecture Behavioral of Q88AdderIP is
            CE : in STD_LOGIC);
     end component; 
 
-begin
+begin   
 
     add_ip: c_addsub_0 port map (CLK=>CLK, A=>A, B=>B, S=>P, CE=>CE);
 

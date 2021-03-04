@@ -53,7 +53,7 @@ begin
         CLK_tb <= '1';
         wait for 5ns;
     end process;
-    
+    CE_tb<='1';
    process begin 
         A_tb <= "000" & X"800";
         B_tb <= "000" & X"400";
