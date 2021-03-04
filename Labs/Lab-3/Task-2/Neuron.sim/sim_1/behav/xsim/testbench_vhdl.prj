@@ -1,9 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../Neuron.gen/sources_1/ip/adder_ip/sim/adder_ip.vhd" \
-"../../../../Neuron.gen/sources_1/ip/mult_ip/sim/mult_ip.vhd" \
-"../../../../Neuron.srcs/sources_1/new/neuron.vhd" \
-"../../../../Neuron.srcs/sim_1/new/testbench.vhd" \
-
-# Do not sort compile order
-nosort

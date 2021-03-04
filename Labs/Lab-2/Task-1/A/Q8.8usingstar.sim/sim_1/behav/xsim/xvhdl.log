@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "E:/Documents/GitHub/ENEL-489/Labs/Lab-2/Task-1/A/Q8.8usingstar.srcs/sources_1/new/Q88Star.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Q88Star'
-INFO: [VRFC 10-163] Analyzing VHDL file "E:/Documents/GitHub/ENEL-489/Labs/Lab-2/Task-1/A/Q8.8usingstar.srcs/sim_1/new/testbench.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'testbench'
